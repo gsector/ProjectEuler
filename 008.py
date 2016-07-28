@@ -23,4 +23,29 @@ testString = '73167176531330624919225119674426574742355349194934\
 05886116467109405077541002256983155200055935729725\
 71636269561882670428252483600823257530420752963450'
 
-j = 0
+
+def getproduct(nums, st, en):
+    j = 1
+    for z in range(st, en):
+        j = int(nums[z])*j
+    return j
+
+
+adj = 13
+
+i = 0
+resultlist = []
+currHigh = 0
+highNums = ''
+
+while adj + i <= len(testString):
+    testHigh = getproduct(testString, i, adj + i)
+    if testHigh > currHigh:
+        currHigh = testHigh
+        highNums = ''
+        for j in range(i,adj+i):
+            highNums = highNums + str(testString[j])
+    i += 1
+
+print(highNums)
+
