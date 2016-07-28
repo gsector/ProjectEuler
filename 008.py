@@ -41,11 +41,10 @@ highNums = ''
 while adj + i <= len(testString):
     testHigh = getproduct(testString, i, adj + i)
     if testHigh > currHigh:
+        print("Highest Number: " + str(testHigh))
         currHigh = testHigh
         highNums = ''
         for j in range(i,adj+i):
             highNums = highNums + str(testString[j])
     i += 1
-
-print(highNums)
 
