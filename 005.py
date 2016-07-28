@@ -28,7 +28,6 @@ while answer == 0:
             break
         if j == 1:
             answer = test
-            break
         j -= 1
     test += 1
 
