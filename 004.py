@@ -33,4 +33,5 @@ while checknum > 100 * 100:
             num_2 -= 1
         num_1 -= 1
 
+
     checknum -= 1
