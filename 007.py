@@ -7,6 +7,7 @@ n = 10001
 primeCount = 3
 nprime = 0
 i = 6
+
 while primeCount < n:
     j = 2
     while j < i:
